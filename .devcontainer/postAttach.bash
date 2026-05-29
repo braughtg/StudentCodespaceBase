@@ -15,6 +15,8 @@ if ((!NOVNC)); then
   echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
   echo ""
 else
+  echo "noVNC: http://localhost:6901"
+  echo ""
   echo "*******************"
   echo "Codespace is ready!"
   echo "*******************"
