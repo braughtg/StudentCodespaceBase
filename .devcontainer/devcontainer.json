@@ -6,7 +6,7 @@
   "remoteUser": "student",
   "workspaceFolder": "/home/student",
 
-  "postAttachCommand": "/workspaces/StudentCodespaceBase/.devcontainer/heartbeat.bash",
+  "postAttachCommand": "/workspaces/StudentCodespaceBase/.devcontainer/postAttach.bash",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:3.0.1": {
