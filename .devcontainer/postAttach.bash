@@ -15,12 +15,16 @@ if ((!NOVNC)); then
   echo "If that does not work try creating a new one."
   echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
   echo ""
-fi
+else
+  echo "*******************"
+  echo "Codespace is ready!"
+  echo "*******************"
 
-# Generate output to the terminal every 5 minutes
-# to keep the codespace from timing out while working
-# in the fluxbox desktop.
-while true; do
-  echo "Heartbeat: $(date)"
-  sleep 300
-done
+  # Generate output to the terminal every 5 minutes
+  # to keep the codespace from timing out while working
+  # in the fluxbox desktop.
+  while true; do
+    sleep 300
+    echo "Heartbeat: $(date)"
+  done
+fi
