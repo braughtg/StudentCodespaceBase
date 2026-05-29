@@ -1,7 +1,6 @@
 #!/bin/bash
 
-REPO_DIR=$(git rev-parse --show-toplevel)
-source "$REPO_DIR/.devcontainer/lib.bash"
+source "/workspaces/StudentCodespaceBase/.devcontainer/lib.bash"
 
 checkNoVNC
 NOVNC=$?
