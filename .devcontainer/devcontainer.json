@@ -6,6 +6,8 @@
   "remoteUser": "student",
   "workspaceFolder": "/home/student",
 
+  "postAttachCommand": "/workspaces/StudentCodespaceBase/.devcontainer/heartbeat.bash",
+
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:3.0.1": {
       "moby": false
