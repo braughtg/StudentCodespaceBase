@@ -14,11 +14,18 @@
     },
   },
 
+  "portsAttributes": {
+    "6901": {
+      "label": "noVNC",
+      "protocol": "http",
+      "onAutoForward": "silent"
+    },
+  },
+
   "customizations": {
     "vscode": {
       "settings": {
         "remote.autoForwardPorts": true,
-        "remote.autoForwardPortsSource": "output",
         "terminal.integrated.defaultProfile.linux": "bash",
         "extensions.ignoreRecommendations": true,
         "extensions.autoUpdate": false
