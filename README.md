@@ -29,10 +29,11 @@ The StudentCodespaceBase is a Debian Linux container that runs in GitHub Codespa
    <img src='images/scaling-mode.png' alt='Setting the Scaling Mode.' style='max-width: 100%;'>
 9. Right click anywhere in the window (i.e. on the GUI Desktop) and open a Terminal to get started.
 
-## Stopping and Restarting Existing Codespaces
+## Stopping a Codespaces
 
-
-
+1. Visit your [Codespaces page](https://github.com/codespaces).
+2. Click the "..." to the right of the Codespace you want to stop.
+3. Choose "Stop codespace".
 
 ## Contents
 
