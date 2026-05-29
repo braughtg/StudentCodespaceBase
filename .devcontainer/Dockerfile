@@ -1,16 +1,34 @@
-FROM debian:bookworm
+FROM debian
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+ARG USERNAME=student
+ARG PASSWD=student
+
 # Install some base applications.
-RUN apt-get install --no-install-recommends -y \
+RUN apt update \
+ && apt-get install --no-install-recommends -y \
         sudo \
         vim-tiny \
         nano \
         wget \
         curl \
         man \
-        git
+        git \
+        firefox-esr
+
+# Create the non-root user inside the container
+# Give them sudo privlidges.
+# Set bash as the default shell.
+RUN useradd \
+    -m $USERNAME -p "$(openssl passwd -1 $PASSWD)" \
+    -s /bin/bash \
+    -G sudo \
+ && rm /usr/bin/dash \
+ && ln -sf /bin/bash /bin/sh 
+
+USER $USERNAME
+WORKDIR /home/$USERNAME
 
 # Do some basic git configuration.
 RUN git config --global credential.helper store \
@@ -25,7 +43,11 @@ RUN git config --global credential.helper store \
  && echo "source /usr/share/bash-completion/completions/git" >> .bashrc
 
 # Stuff to reduce image size.
+USER root
 RUN apt-get clean -y \
  && apt-get autoclean -y \
  && apt-get autoremove -y \
  && rm -rf /var/lib/apt/lists/*
+
+USER $USERNAME
+WORKDIR /home/$USERNAME
