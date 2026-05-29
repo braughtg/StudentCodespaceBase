@@ -2,6 +2,15 @@
 
 The StudentCodespaceBase is a Debian Linux container that runs in GitHub Codespaces and provides a GUI desktop, providing a simple low to no cost way for students to spin up a Linux machine for class work, activities or projects.
 
+In addition to the base Debian Liunux and the GUI desktop the following are also installed:
+- Docker (via Docker on Docker)
+- Git
+- GitHub CLI (`gh`)
+- Firefox
+- `vim`, `nano`
+- `wget`, `curl`
+- `man`
+
 ## Usage
 
 1. Log into GitHub
@@ -32,12 +41,12 @@ The StudentCodespaceBase is a Debian Linux container that runs in GitHub Codespa
 ## Stopping a Codespaces
 
 1. Visit your [Codespaces page](https://github.com/codespaces).
+   - If the page was already open, you'll need to reload it to update it with the current status.
 2. Click the "..." to the right of the Codespace you want to stop.
 3. Choose "Stop codespace".
 
-## Contents
+## Extending the Container
 
 
-## Extension
 
 
