@@ -19,9 +19,10 @@ In addition to the base Debian Liunux and the GUI desktop the following are also
 3. Wait for the codespace to be created (~5 minutes) or restarted (~1 minute). The following message will appear in the "TERMINAL panel" at the bottom of the window when the codespace is ready.
    ```text
    *******************
-   Codespace is ready!
+     noVNC is ready!
    *******************
    ```
+   - Note: this terminal will not have a command prompt.  It will periodically output a "Heartbeat" message that _usually_ keeps the codespace from timing out due to the [timeout period](https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces?tool=webui).
 5. Open the "PORTS tab" from the menu bar above the "Terminal panel".
 
    <img src='images/ports-tab.png' alt='The ports tab.' style='max-width: 100%;'>
@@ -38,7 +39,7 @@ In addition to the base Debian Liunux and the GUI desktop the following are also
   
    <img src='images/scaling-mode.png' alt='Setting the Scaling Mode.' style='max-width: 100%;'>
 9. Right click anywhere in the window (i.e. on the GUI Desktop) and open a Terminal to get started.
-   - It may take a few moments for the terminal to open the first time.
+   - Note: it may take a few moments for the terminal to open the first time.
 
 ## Stopping a Codespaces
 

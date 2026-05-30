@@ -18,7 +18,7 @@ else
   echo "noVNC: http://localhost:6901"
   echo ""
   echo "*******************"
-  echo "Codespace is ready!"
+  echo "  noVNC is ready!"
   echo "*******************"
 
   # Generate output to the terminal every 5 minutes
